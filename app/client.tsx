@@ -103,7 +103,7 @@ export default function Client({
                   <TableHead>Title</TableHead>
                   <TableHead>Artist</TableHead>
                   <TableHead>Album</TableHead>
-                  <TableHead>Duration</TableHead>
+                  <TableHead>Year</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
