@@ -8,7 +8,7 @@ type Song = {
 };
 
 export default function Page() {
-  const addSong = async (songInfo: Song) => {
+  const addSong = async (songInfo: Omit<Song, "id">) => {
     "use server";
     await submitSong(songInfo);
     return "success";

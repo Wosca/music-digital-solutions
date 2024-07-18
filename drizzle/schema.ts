@@ -45,7 +45,7 @@ export const searchSongs = async (searchTerm: string) => {
   return returnedSongs;
 };
 
-export const submitSong = async (songInfo: Song) => {
+export const submitSong = async (songInfo: Omit<Song, "id">) => {
   const { songtitle, artist, year, genre } = songInfo;
   const newSong = await db.insert(songs).values({
     songtitle,
