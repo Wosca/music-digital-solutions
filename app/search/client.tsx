@@ -63,7 +63,7 @@ export default function Client({
 
       setSongs(requestedSongs);
       setFetching(false);
-    }, 500);
+    }, 200);
 
     return () => clearTimeout(delayDebounceFn);
   }, [searchTerm]);
